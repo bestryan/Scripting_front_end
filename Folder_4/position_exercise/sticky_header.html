@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <title>Sticky Header</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font-family: calibri, sans-serif;
+      vertical-align: baseline;
+    }
+
+    header {
+      text-align: center;
+      font-size: 72px;
+      line-height: 108px;
+      height: 108px;
+      background: #335C7D;
+      color: #fff;
+      transition: all 0.4s ease;
+    }
+
+    p {
+      margin-top: 20px;
+    }
+
+    header.sticky {
+      position: fixed;
+      font-size: 24px;
+      line-height: 48px;
+      height: 48px;
+      width: 100%;
+      background: #efc47D;
+      text-align: left;
+      padding-left: 20px;
+    }
+
+    article.sticky {
+      display: inline-block;
+      margin-top: 1px;
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <header>
+    <h1>Sticky Header</h1>
+  </header>
+  <article>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse dapibus, sem et tempus condimentum, nisl
+      ligula laoreet ex, nec venenatis libero lorem et est. Vestibulum sed aliquet sem. Praesent a metus risus. Etiam
+      interdum imperdiet magna in lacinia. Sed molestie condimentum urna. Aenean et est non libero euismod commodo et
+      convallis dui. Sed faucibus vestibulum magna, ac ultricies est dictum sed. Proin velit nunc, ultricies fringilla
+      enim sit amet, venenatis varius odio. Sed eu nulla non diam molestie tristique vel at massa. Donec facilisis, leo
+      ac faucibus cursus, lorem lacus lobortis ligula, vitae consectetur ex mauris non quam. Duis mattis laoreet ligula
+      quis consectetur. Etiam rhoncus imperdiet velit nec iaculis. Donec ac augue sollicitudin, gravida justo sed,
+      ornare libero. Curabitur a lacinia orci.
+    </p>
+    <p>
+      Maecenas ullamcorper ornare ultricies. Ut nisl lorem, ullamcorper sit amet semper sed, venenatis eget tellus.
+      Fusce consectetur nisl id diam facilisis, vel interdum leo porta. Integer mollis, sapien id blandit volutpat,
+      dolor libero tempus turpis, ac iaculis sem ligula non erat. Nulla fermentum erat eu tristique aliquam. Suspendisse
+      tincidunt lacinia metus, quis commodo felis vulputate in. Nam ac dui a neque varius vulputate ac non dolor. Nulla
+      eget nibh in nisl pretium tempus ut id augue. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+      posuere cubilia Curae; Vestibulum et libero tincidunt, tincidunt tellus nec, pellentesque metus.
+    </p>
+    <p>
+      Aliquam at massa ut risus mattis venenatis id vitae dolor. Sed dui sapien, sodales vitae faucibus vel, tincidunt
+      ac velit. Sed id tempus sapien. Aenean gravida porttitor sodales. Morbi tempus nulla orci, et sollicitudin quam
+      rutrum sit amet. Pellentesque viverra egestas congue. Vivamus sem urna, ornare fermentum aliquet vitae, mattis non
+      ante. Nam non sapien nisi. Aliquam eu mattis metus. Nam in ante leo. Praesent id consequat libero.
+    </p>
+    <p>
+      Nam bibendum diam eget nunc scelerisque molestie. Sed justo dolor, malesuada eu libero ut, molestie convallis
+      velit. Aenean viverra dictum vulputate. Mauris molestie iaculis ipsum in varius. Aenean bibendum, velit sit amet
+      tempor consectetur, metus velit pharetra lacus, id dapibus tellus odio eget lectus. Aliquam bibendum facilisis
+      venenatis. Phasellus dui dolor, suscipit quis iaculis et, euismod eget dui. Nunc ut mauris sed libero efficitur
+      semper. Vivamus nec erat venenatis dui imperdiet malesuada facilisis et magna. Nullam at augue condimentum,
+      dapibus erat id, dignissim odio. Morbi rutrum sollicitudin porta. Phasellus laoreet non massa sit amet molestie.
+    </p>
+    <p>
+      Cras feugiat diam vel nibh aliquam ultrices. Vestibulum scelerisque, quam vitae consectetur iaculis, odio erat
+      dictum nunc, nec iaculis est est eu enim. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+      inceptos himenaeos. Donec a ante ultricies tellus hendrerit tincidunt. Nulla facilisis aliquam nisl ut luctus.
+      Maecenas vitae enim lobortis dolor porttitor lobortis. In lorem magna, dapibus dapibus malesuada eget, laoreet nec
+      ante. Quisque et pharetra nunc. Cras a volutpat metus. Ut gravida cursus neque, et cursus velit varius nec.
+      Suspendisse potenti. In hac habitasse platea dictumst. Fusce accumsan sem nec dapibus efficitur. Nullam ut metus
+      nisi. Morbi scelerisque rhoncus dolor ut cursus.
+    </p>
+
+  </article>
+  <figure>
+    <img src="large-image.jpg" width="100%" height="2000" alt="Big Image">
+  </figure>
+</body>
+
+</html>
+
+
+<script>
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1) {
+      $('header').addClass("sticky");
+      $('article').addClass("sticky");
+    } else {
+      $('header').removeClass("sticky");
+      $('article').removeClass("sticky");
+    }
+  });
+</script>

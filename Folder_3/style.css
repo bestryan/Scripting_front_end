@@ -1,0 +1,92 @@
+html {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+}
+
+#center {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 18px;
+}
+
+::placeholder {
+    color: green;
+    font-style: italic;
+}
+
+legend {
+    border: 1px solid rgb(23, 91, 238);
+    border-radius: 10px;
+    background-color: rgb(189, 185, 185);
+    color: rgb(31, 30, 30);
+    padding: 6px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+fieldset {
+    border: 2px solid #999;
+    width: auto;
+    background-color: #fafadf;
+    color: rgb(60, 145, 255);
+    border: 2px solid rgb(78, 77, 77);
+    border-radius: 10px;
+    margin: 10px 12px 0 12px;
+}
+
+label {
+    text-align: right;
+    float: left;
+    padding: 2px;
+    width: 160px;
+    border-right: 2px solid #ccc;
+    padding-right: 10px;
+    margin: 6px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+br {
+    clear: left;
+}
+
+input,
+textarea,
+select {
+    margin-left: 15px;
+}
+
+form {
+    background-color: #ccc;
+    width: auto;
+    border: 2px solid rgb(78, 77, 77);
+    border-radius: 10px;
+
+}
+
+input:focus:required:invalid {
+    background-color: red;
+}
+
+input[type=submit] {
+    border: 1px solid rgb(78, 77, 77);
+    border-radius: 10px;
+    color: rgb(23, 91, 238);
+    padding: 4px;
+    width: 160px;
+    font-weight: bold;
+}
+
+p {
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+}
+
+textarea[placeholder]{
+    text-align: center;
+}

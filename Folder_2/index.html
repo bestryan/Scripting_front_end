@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Data Table Exercise</title>
+</head>
+<body>
+
+<!-- Exercise 1 -->
+<table>
+    <caption>Freight Charges</caption>
+    <thead>
+        <tr>
+            <th></th>
+            <th>Perth</th>
+            <th>Adelaide</th>
+            <th>Brisbane</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="col_th">RAIL</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td id="col_th">Standard</td>
+            <td>$45.00</td>
+            <td>$35.00</td>
+            <td>$24.50</td>
+        </tr>
+        <tr>
+            <td id="col_th">Express</td>
+            <td>$52.00</td>
+            <td>$40.00</td>
+            <td>$30.00</td>
+        </tr>
+        <tr id="air">
+            <td id="col_th">AIR</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td id="col_th">Standard</td>
+            <td>$74.00</td>
+            <td>$47.50</td>
+            <td>$38.00</td>
+        </tr>
+        <tr>
+            <td id="col_th">Express</td>
+            <td>$80.00</td>
+            <td>$55.00</td>
+            <td>$40.00</td>
+        </tr>
+    </tbody>
+
+
+
+
+</table>
+
+
+</body>
+</html>
+
+
+<style>
+    caption{
+        font-size:18px;
+        font-weight: bold;
+    }
+
+    table, th{
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 4px 40px 4px 5px;
+    }
+    td {
+        padding: 4px 40px 4px 5px;
+        border-left: 1px solid black;
+    }
+    #air{
+        border-top: 1px solid black;
+    }
+    #col_th{
+        font-weight: bold;
+    }
+
+</style>

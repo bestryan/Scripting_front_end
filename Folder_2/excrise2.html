@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- Exercise 2 -->
+<br>
+<table>
+    <thead>
+        <tr>
+            <th id="text_left">Item</th>
+            <th></th>
+            <th>Qty</th>
+            <th>Price</th>            
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="right" >The Restaurant at the End of the Universe</td>
+            <td rowspan="2" id="right">In Stock</td>
+            <td rowspan="2" id="right">1</td>
+            <td rowspan="2" id="text_right">$16.95</td>
+        </tr>
+        <tr>
+            <td id="right" class="none">by Douglas Adams</td>
+        </tr>
+        <tr>
+            <td id="right">Animal Farm</td>
+            <td rowspan="2" id="right">In Stock</td>
+            <td rowspan="2" id="right">2</td>
+            <td id="text_right">$53.98</td>
+        </tr>
+        <tr>
+            <td id="right" class="none">by George Orwell</td>
+            <td class="none">$26.99 x 2</td>
+        </tr>
+        <tr>
+            <td id="right">The Catcher in the Rye</td>
+            <td rowspan="2" id="right">Out of Stock</td>
+            <td rowspan="2" id="right">1</td>
+            <td rowspan="2" id="text_right">$22.25</td>
+        </tr>
+        <tr>
+            <td id="right" class="none">by J. D. Salinger</td>
+        </tr>
+        <tr>
+            <td id="right">Nightfall</td>
+            <td rowspan="2" id="right">In Stock</td>
+            <td rowspan="2" id="right">1</td>
+            <td rowspan="2" id="text_right">$30.00</td>
+        </tr>
+        <tr>
+            <td id="right" class="none">by Isaac Asimov & Robert Silverberg</td>
+        </tr>
+        <tr id="text_right">
+            <td colspan="3" id="right">Subtotal</td>
+            <td>$123.18</td>
+        </tr>
+        <tr id="text_right">
+            <td colspan="3" id="right">GST (10%)</td>
+            <td>$12.32</td>
+        </tr>
+        <tr id="text_right">
+            <td colspan="3" id="right">Total</td>
+            <td>$135.50</td>
+        </tr>
+    </tbody>
+
+
+</table>
+
+
+
+
+
+</body>
+</html>
+
+<style>
+    td {
+      border-top: 1px solid lightgray;
+      font-family: sans-serif;
+      font-size: 14px;
+      padding: 6px 15px;
+    }
+
+
+    th{
+        font-family: sans-serif;
+        font-size: 15px;
+        padding: 6px 15px;
+    }
+    table{
+
+        border: 2px solid lightgray;
+        border-spacing: 0px;
+        border-radius: 15px;
+    }
+    #right{
+        border-right: 1px solid lightgray;
+    }
+    .none{
+        border: none;
+    }
+    #text_left{
+        text-align: left;
+    }
+    #text_right{
+        text-align: right;
+    }
+    #center{
+        text-align: center
+    }
+
+
+
+</style>

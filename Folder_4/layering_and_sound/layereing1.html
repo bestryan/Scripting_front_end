@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Absolute positioning & layering</p>
+    <div class="one" >
+        <img src="sunset.jpg">
+    </div>
+
+    <div class="oz">
+        <img src="ozsunset.gif">
+    </div>
+    <div class="two" >This is class two</div>
+    <div class="three">This is class threeThis is class three This is class three This is class three</div>
+    <div class="four">
+        This is class four<br>
+        This is class four<br>
+        This is class four
+    </div>
+
+
+</body>
+</html>
+
+
+<style>
+body{
+    font-family: verdana, arial,
+    Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 35px; background-color: #ff9900;
+}
+img{
+    width: auto;
+}
+.one{
+    position: absolute;
+    top:90px;
+    left:200px;
+    z-index: -1;
+}
+.oz{
+    position: absolute;
+    top:360px;
+    left:190px;
+
+}
+.two{
+    font: verdana, arial, Helvetica, sans-serif;
+    color: #ffffff;
+    font-size: 25px;
+    background-color: #ff9900;
+    position: absolute;
+    left: 210px;
+    top:100px
+}
+.three{
+    font: verdana, arial, Helvetica, sans-serif;
+    color: #c0c0c0;
+    font-size: 11px;
+    background-color: #404040;
+    position: absolute;
+    left: 180px;
+    top:260px
+}
+.four{
+    font: verdana, arial, Helvetica, sans-serif;
+    color: #c0c0c0;
+    font-size: 20px;
+    background-color: #404040;
+    position: absolute;
+    left: 470px;
+    top: 330px;
+}
+
+
+</style>
